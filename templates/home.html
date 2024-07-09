@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container-lg bg-white mt-3 p-3">
+
+    <section class="carousel-section">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://api.palitral.ge/storage/sliders/ntSXoL0KfdfMWxS0YcAVAqPkLPgzoUhG5TzvdAS2.png.webp" class="d-block w-100" alt="Book 1">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.sulakauri.ge/wp-content/uploads/2024/04/image-27.webp" class="d-block w-100" alt="Book 2">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://apiv1.biblusi.ge/storage/sliders/gmhF0bx4URahSAC9E51XD0WDx8CPn5wEzmatFZW1.jpg" class="d-block w-100" alt="Book 3">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://apiv1.biblusi.ge/storage/book/z7y89eGQUxvDXn1QHwn2s3ed4MxyVdGq2jdcz5fM.jpg" class="card-img-top" alt="book.title">
+                <div class="card-body">
+                    <h5 class="card-title">პროცესი</h5>
+                    <p class="card-text">ფრანც კაფკა</p>
+                    <p class="card-text">9,90</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://apiv1.biblusi.ge/storage/book/QgNCjCr2ipwF0XtrzRmeMXx2TJVQTkBkFeNOkqT1.jpg" class="card-img-top" alt="book.title">
+                <div class="card-body">
+                    <h5 class="card-title">ნუ მოკლავ ჯაფარას</h5>
+                    <p class="card-text">ჰარპერ ლი</p>
+                    <p class="card-text">14,90</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://api.palitral.ge/storage/upload/image-png/2024-03-12/moswavlis_archevani_javaxishvili_4e65574ca1e6f925fa530ac7f26a38fa.png.webp" class="card-img-top" alt="book.title">
+                <div class="card-body">
+                    <h5 class="card-title">ჯაყოს ხიზნები</h5>
+                    <p class="card-text">მიხეილ ჯავახიშვილი</p>
+                    <p class="card-text">17,90</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary"> კალათში</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://api.palitral.ge/storage/book/n7x8sjhetFZrfmpMMELrVktAthkgYbtEcgx1PpkB.png.webp" class="card-img-top" alt="book.title">
+                <div class="card-body">
+                    <h5 class="card-title">1984</h5>
+                    <p class="card-text">ჯორჯ ორუელი</p>
+                    <p class="card-text">15,90</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://api.palitral.ge/storage/book/acuKX8566l6BZ3KvirJnB8RY6CCkaerH8z39AYpH.png.webp" class="card-img-top" alt="book.title">
+                <div class="card-body">
+                    <h5 class="card-title">ცხოველების ფერმა</h5>
+                    <p class="card-text">ჯორჯ ორუელი</p>
+                    <p class="card-text">10,95</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i0.wp.com/www.sulakauri.ge/wp-content/uploads/2022/05/patara-printsi.webp?w=600&ssl=1" class="card-img-top" alt="book.title">
+                <div class="card-body">
+                    <h5 class="card-title">პატარა პრინცი</h5>
+                    <p class="card-text">ანტუან დე სენტ-ეგზიუპერი</p>
+                    <p class="card-text">8,90</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i0.wp.com/www.sulakauri.ge/wp-content/uploads/2020/02/mur-norvegiuli-tqhe.jpg?w=600&ssl=1" class="card-img-top" alt="book.title">
+                <div class="card-body">
+                    <h5 class="card-title">ნორვეგიული ტყე</h5>
+                    <p class="card-text">ჰარუკი მურაკამი</p>
+                    <p class="card-text">17,90</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i0.wp.com/www.sulakauri.ge/wp-content/uploads/2022/08/patara-qalebi.webp?w=504&ssl=1" class="card-img-top" alt="book.title">
+                <div class="card-body">
+                    <h5 class="card-title">პატარა ქალები</h5>
+                    <p class="card-text">ლუიზა მეი ოლკოტი</p>
+                    <p class="card-text">15,90</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+<footer class="main-footer">
+    <div class="container">
+        <p>&copy; 2024 NovelNest. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+

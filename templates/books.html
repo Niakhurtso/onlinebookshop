@@ -1,0 +1,369 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-lg bg-white mt-3 p-3">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        {% for product in products %}
+            {% include "product.html" %}
+        {% endfor %}
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://apiv1.biblusi.ge/storage/book/z7y89eGQUxvDXn1QHwn2s3ed4MxyVdGq2jdcz5fM.jpg"
+                     class="card-img-top" alt="Book 1">
+                <div class="card-body">
+                    <h5 class="card-title">პროცესი</h5>
+                    <p class="card-text">ფრანც კაფკა</p>
+                    <p class="card-text">9,90</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://apiv1.biblusi.ge/storage/book/QgNCjCr2ipwF0XtrzRmeMXx2TJVQTkBkFeNOkqT1.jpg"
+                     class="card-img-top" alt="Book 2">
+                <div class="card-body">
+                    <h5 class="card-title">ნუ მოკლავ ჯაფარას</h5>
+                    <p class="card-text">ჰარპერ ლი</p>
+                    <p class="card-text">14,90</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://api.palitral.ge/storage/upload/image-png/2024-03-12/moswavlis_archevani_javaxishvili_4e65574ca1e6f925fa530ac7f26a38fa.png.webp"
+                     class="card-img-top" alt="Book 3">
+                <div class="card-body">
+                    <h5 class="card-title">ჯაყოს ხიზნები</h5>
+                    <p class="card-text">მიხეილ ჯავახიშვილი</p>
+                    <p class="card-text">17,90</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://api.palitral.ge/storage/book/n7x8sjhetFZrfmpMMELrVktAthkgYbtEcgx1PpkB.png.webp"
+                     class="card-img-top" alt="Book 4">
+                <div class="card-body">
+                    <h5 class="card-title">1984</h5>
+                    <p class="card-text">ჯორჯ ორუელი</p>
+                    <p class="card-text">15,90</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://api.palitral.ge/storage/book/acuKX8566l6BZ3KvirJnB8RY6CCkaerH8z39AYpH.png.webp"
+                     class="card-img-top" alt="Book 5">
+                <div class="card-body">
+                    <h5 class="card-title">ცხოველების ფერმა</h5>
+                    <p class="card-text">ჯორჯ ორუელი</p>
+                    <p class="card-text">10,95</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i0.wp.com/www.sulakauri.ge/wp-content/uploads/2022/05/patara-printsi.webp?w=600&ssl=1"
+                     class="card-img-top" alt="Book 6">
+                <div class="card-body">
+                    <h5 class="card-title">პატარა პრინცი</h5>
+                    <p class="card-text">ანტუან დე სენტ-ეგზიუპერი</p>
+                    <p class="card-text">8,90</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i0.wp.com/www.sulakauri.ge/wp-content/uploads/2020/02/mur-norvegiuli-tqhe.jpg?w=600&ssl=1"
+                     class="card-img-top" alt="Book 7">
+                <div class="card-body">
+                    <h5 class="card-title">ნორვეგიული ტყე</h5>
+                    <p class="card-text">ჰარუკი მურაკამი</p>
+                    <p class="card-text">17,90</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i0.wp.com/www.sulakauri.ge/wp-content/uploads/2022/08/patara-qalebi.webp?w=504&ssl=1"
+                     class="card-img-top" alt="Book 8">
+                <div class="card-body">
+                    <h5 class="card-title">პატარა ქალები</h5>
+                    <p class="card-text">ლუიზა მეი ოლკოტი</p>
+                    <p class="card-text">15,90</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://api.palitral.ge/storage/upload/image-png/2024-03-12/sagizheti_486d0de0c9e42b1624fa43a0fda2f7fc.png.webp"
+                     class="card-img-top" alt="Book 9">
+                <div class="card-body">
+                    <h5 class="card-title">საგიჟეთი</h5>
+                    <p class="card-text">მედლინ რუ</p>
+                    <p class="card-text">12,95</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://apiv1.biblusi.ge/storage/book/BGmqGBvk7XpX7xLrENktQwPE0lf33eY5oMYUtXAQ.png"
+                     class="card-img-top" alt="Book 10">
+                <div class="card-body">
+                    <h5 class="card-title">ღვთაებრივი კომედია</h5>
+                    <p class="card-text">დანტე ალეგიერი</p>
+                    <p class="card-text">23,95</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://api.palitral.ge/storage/upload/image-png/2023-09-37/kacia-adamiani_f45029ae7d338d67c0e249bae31a4be4.png.webp"
+                     class="card-img-top" alt="Book 11">
+                <div class="card-body">
+                    <h5 class="card-title"> კაცია ადამიანი ?! </h5>
+                    <p class="card-text"> ილიან ჭავჭავაძე </p>
+                    <p class="card-text"> 22,90 </p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i0.wp.com/www.sulakauri.ge/wp-content/uploads/2022/11/kaphka-plazhze.webp?w=600&ssl=1"
+                     class="card-img-top" alt="Book 12">
+                <div class="card-body">
+                    <h5 class="card-title"> კაფკა პლაჟზე</h5>
+                    <p class="card-text"> ჰარუკი მურაკამი </p>
+                    <p class="card-text"> 18,90 </p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://apiv1.biblusi.ge/storage/book/fqs18Hgk2mXp1mjxo43p0WGzk3Fs69COM4bdbIlT.jpg"
+                     class="card-img-top" alt="Book 13">
+                <div class="card-body">
+                    <h5 class="card-title"> გარდასახვა </h5>
+                    <p class="card-text"> ფრანც კაფკა </p>
+                    <p class="card-text"> 9,95 </p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://apiv1.biblusi.ge/storage/book/syK49WIW2waquuKDTfz2MSBisMUUceVOGutV2YVR.jpg"
+                     class="card-img-top" alt="Book 14">
+                <div class="card-body">
+                    <h5 class="card-title"> ფრანით მორბენალი</h5>
+                    <p class="card-text">ხალიდ ჰოსეინი</p>
+                    <p class="card-text"> 15, 95</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://apiv1.biblusi.ge/storage/book/OjDyUnMM2JFUxNF4biopPMlusY9iiGHiLL0OMpl0.png"
+                     class="card-img-top" alt="Book 15">
+                <div class="card-body">
+                    <h5 class="card-title">ზებულონი</h5>
+                    <p class="card-text">ჯემალ ქარჩხაძე</p>
+                    <p class="card-text"> 19,95</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://apiv1.biblusi.ge/storage/book/PVUrpO0LbLAyabVPzagZUAXoS218GMjOvwxJxbse.jpg"
+                     class="card-img-top" alt="Book 16">
+                <div class="card-body">
+                    <h5 class="card-title"> მზე, მთვარე და პურის ყანა</h5>
+                    <p class="card-text">თემურ ბაბლუანი</p>
+                    <p class="card-text">19,95</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://apiv1.biblusi.ge/storage/book/SsPqeubHAP9bR2NrGgn7kRAkTjReZROdYjWtdMqe.jpg"
+                     class="card-img-top" alt="Book 17">
+                <div class="card-body">
+                    <h5 class="card-title">შაშვი შაშვი მაყვალი</h5>
+                    <p class="card-text">თამთა მელაშვილი</p>
+                    <p class="card-text"> 14,95</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://apiv1.biblusi.ge/storage/book/OsE65lBJ9gI06ma9y4fMGEpP1Ws89iGBUbdSvci3.jpg"
+                     class="card-img-top" alt="Book 18">
+                <div class="card-body">
+                    <h5 class="card-title">დიდოსტატის მარჯვენა</h5>
+                    <p class="card-text">კონსტანტინე გამსახურდია</p>
+                    <p class="card-text">16,95</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://api.palitral.ge/storage/upload/image-png/2022-03-13/Untitled-1_(4)_406add4b375a10c2d56857e5db2ee514.png.webp"
+                     class="card-img-top" alt="Book 19">
+                <div class="card-body">
+                    <h5 class="card-title">ჯეინ ეარი - Jane eyre</h5>
+                    <p class="card-text">შარლოტა ბრონტე</p>
+                    <p class="card-text">11,95</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i0.wp.com/www.sulakauri.ge/wp-content/uploads/2020/07/natsqhvdiadevs.jpg?w=600&ssl=1"
+                     class="card-img-top" alt="Book 20">
+                <div class="card-body">
+                    <h5 class="card-title">ნაწყვდიადევს</h5>
+                    <p class="card-text"> ჰარუკი მურაკამი </p>
+                    <p class="card-text">12,95</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://api.palitral.ge/storage/book/TsL452prgpXr8S34hY9Eu6PsZu8doUOFKLRo2muW.png.webp"
+                     class="card-img-top" alt="Book 21">
+                <div class="card-body">
+                    <h5 class="card-title">ფეხებზე დაკიდების ნატიფი ხელოვნება</h5>
+                    <p class="card-text"> მარკ მენსონი </p>
+                    <p class="card-text">16,95</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://api.palitral.ge/storage/upload/image-png/2022-01-04/18_%E1%83%A1%E1%83%94%E1%83%A0%E1%83%95%E1%83%90%E1%83%9C%E1%83%A2%E1%83%94%E1%83%A1%E1%83%98_-_%E1%83%93%E1%83%9D%E1%83%9C_%E1%83%99%E1%83%98%E1%83%AE%E1%83%9D%E1%83%A2%E1%83%98_1_306f010baa3549635443331d33162d24.png.webp"
+                     class="card-img-top" alt="Book 22">
+                <div class="card-body">
+                    <h5 class="card-title"> დონ კიხოტი ნაწ.1</h5>
+                    <p class="card-text">მიგელ დე სერვანტესი</p>
+                    <p class="card-text">16,95</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://api.palitral.ge/storage/upload/image-png/2021-12-50/9789941322365_(1)_5ba2e6810bdb69caa69f1b02f91e088f.png.webp"
+                     class="card-img-top" alt="Book 23>">
+                <div class="card-body">
+                    <h5 class="card-title">the great gatsby</h5>
+                    <p class="card-text">F. Scott Fitzgerald</p>
+                    <p class="card-text">11.95</p>
+                    <a href="{{ url_for('cart') }}" class="btn btn-primary">კალათში</a>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-heart"></i> Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+{% endblock %}

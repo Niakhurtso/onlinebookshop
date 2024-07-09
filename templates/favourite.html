@@ -1,0 +1,40 @@
+
+{% extends "base.html" %}
+
+{% block title %}
+Favorite - NovelNest
+{% endblock %}
+
+{% block body %}
+<style>
+    .card-custom .card-img-top {
+        height: 250px;
+        object-fit: cover;
+    }
+</style>
+<div class="container-lg bg-white mt-3 p-3">
+    <h2>Your Favourite Books</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        {% for book in favourite_items %}
+        <div class="col">
+            <div class="card h-100">
+                <img src="{{ book.image }}" class="card-img-top" alt="Book 1">
+                <div class="card-body">
+                    <h5 class="card-title">{{ book.title }}</h5>
+                    <p class="card-text">{{ book.author }}</p>
+                    <p class="card-text">{{ book.price }}</p>
+                    <a href="#" class="btn btn-primary">კალათში</a>
+                    <a href="{{ url_for('favourite', book_id=book.id) }}" class="btn btn-purple"><i class="fas fa-heart"></i></a>
+                </div>
+            </div>
+        </div>
+        <form action="{{ url_for('add_to_wishlist') }}" method="post">
+            <input type="hidden" name="book_id" value="{{ book.id }}">
+            <button type="submit" class="btn btn-primary">Add to Wishlist</button>
+        </form>
+
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

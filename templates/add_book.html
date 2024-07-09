@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="addProduct-container">
+        <h2 class="text-center">Add book </h2>
+        <form method="post" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <div class="mb-3">
+                <label class="form-label">book name</label>
+               {{ form.name(class="form-control") }}
+            </div>
+            <div class="mb-3">
+                <label class="form-label">book description</label>
+                {{ form.description(class="form-control") }}
+            </div>
+            <div class="mb-3">
+                <label class="form-label">book price</label>
+                {{ form.price(class="form-control") }}
+            </div>
+            <div class="mb-3">
+                <label class="form-label">book </label>
+                {{ form.image.label.text }}: {{ form.image(accept=".jpg,.png") }}
+            </div>
+            {{ form.submit(class="btn btn-success w-100") }}
+        </form>
+    </div>
+</div>
+{% endblock %}

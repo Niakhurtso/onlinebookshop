@@ -1,0 +1,169 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F8FF; /* Off-White */
+    margin: 0;
+    padding: 0;
+}
+
+.container-xl {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 2rem 0;
+}
+
+/* Navbar logo size */
+.navbar-brand .logo {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Login page styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #D3D3D3; /* Light Gray */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    color: #4B0082; /* Deep Purple */
+    margin-bottom: 450px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 200%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #B0A8B9; /* Muted Purple */
+    border-radius: 5px;
+}
+
+.login-container input[type="submit"] {
+    background-color: #4B0082; /* Deep Purple */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #3a006a; /* Darker Deep Purple */
+}
+
+
+/* About page styles */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    background-color: #D3D3D3; /* Light Gray */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 50px auto;
+}
+
+.about-container h1 {
+    color: #4B0082; /* Deep Purple */
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-container a {
+    color: #4B0082; /* Deep Purple */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-container a:hover {
+    text-decoration: underline;
+}
+
+.about-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Signup page styles */
+.signup-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    border: 1px solid #B0A8B9; /* Muted Purple */
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container .form-control:focus {
+    border-color: #4B0082; /* Deep Purple */
+    box-shadow: 0 0 0 0.2rem rgba(75, 0, 130, 0.25);
+}
+
+.signup-container .form-label {
+    font-weight: bold;
+}
+
+.signup-container .btn-success {
+    background-color: #4B0082; /* Deep Purple */
+    border-color: #4B0082; /* Deep Purple */
+    color: white;
+}
+
+.signup-container .btn-success:hover {
+    background-color: #3a006a; /* Darker Deep Purple */
+    border-color: #3a006a; /* Darker Deep Purple */
+}
+
+.signup-container h2 {
+    color: #4B0082; /* Deep Purple */
+    margin-bottom: 30px;
+}
+
+
+/* Heart button styles */
+.btn-heart {
+    background-color: #800080; /* Purple */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-heart:hover {
+    background-color: #4B0082; /* Darker Purple */
+}
+
+.btn-heart i {
+    font-size: 18px;
+    color: #fff; /* Ensure icon color is also white */
+}
+

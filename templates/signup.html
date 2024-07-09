@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}
+Signup - NovelNest
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="signup-container">
+        <h2 class="text-center">Sign Up</h2>
+        <form method="post" enctype="multipart/form-data">
+            {{ signup_form.hidden_tag() }}
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                {{ signup_form.username(class="form-control") }}
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                {{ signup_form.email(class="form-control") }}
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                {{ signup_form.password1(class="form-control") }}
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Repeat Password</label>
+                {{ signup_form.password2(class="form-control") }}
+                {% if signup_form.password2.errors %}
+                <div class="text-danger">
+                    {% for error in signup_form.password2.errors %}
+                    <small>{{ error }}</small><br>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="text-danger">{{ message }}</div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </div>
+            {{ signup_form.submit(class="btn btn-success w-100") }}
+        </form>
+    </div>
+</div>
+{% endblock %}
+

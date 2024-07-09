@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Admin Dashboard</h1>
+
+<h2>Manage Users</h2>
+<a href="{{ url_for('admin_users') }}">Go to User Management</a>
+
+<h2>Manage Books</h2>
+<a href="{{ url_for('admin_books') }}">Go to Book Management</a>
+
+<!-- Additional functionalities like Order Management, Feedback, and Analytics can be added similarly -->
+{% endblock %}
